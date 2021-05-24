@@ -17,23 +17,18 @@ app.set('view engine', 'html') // Default package we are using for the files
 
 app.get('/', function(req, res) {
     res.render('index');
-    //res.send('Hello')
 })
-
-/*app.get('/', (req, res) => res.render('index.html', {
-    
-}));
-
-app.get('/about', (req, res) => res.render('maintenance.pug', {
-    subtitle: 'About Bot'
-}));
-
-app.get('/bugtracker', (req, res) => res.render('maintenance.pug', {
-    subtitle: 'Bugtracker'
-}));
-
-app.get('/login', (req, res) => res.render('maintenance.pug', { 
-    subtitle: 'Login'
-}));*/
+app.get('/index', function(req, res) {
+    res.render('index');
+})
+app.get('/projects', function(req, res) {
+    res.render('projects');
+})
+app.get('/aboutme', function(req, res) {
+    res.render('aboutme');
+})
+app.get('/contact', function(req, res) {
+    res.render('contact');
+})
 
 app.listen(process.env.PORT, () => {console.log(`Server listening to port ${process.env.PORT}`)});
