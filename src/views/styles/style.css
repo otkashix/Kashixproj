@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body{
     margin: auto;
     background-color: rgb(20, 20, 20); 
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 nav{
     display: flex;
@@ -14,11 +17,11 @@ nav{
     border-bottom: 0.5px solid rgb(83, 83, 83);
     font-family: 'Quicksand', sans-serif;
 }
-ul{
+nav ul{
     list-style: none;
     width: 100%;
 }
-ul li{
+nav ul li{
     display: inline;
     font-size: 28px;
     margin-right: 80px;
@@ -40,6 +43,9 @@ a:hover{
     width: 100%;
     height: auto;
 }
+
+/* Index */
+
 #intro{
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
@@ -139,4 +145,59 @@ a:hover{
                             100% 3px,
                             3px 100%;
     }
+}
+
+/* Projects */
+
+.project{
+    display: flex;
+    width: 80%;
+    height: 40%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    border: 0.5px solid white;
+    position: relative;
+}
+.project:hover{
+    transition: 0.5s;
+    border: 0.5px solid cyan;
+}
+.project img{
+    width: 256px;
+    height: 256px;
+}
+.project-info{
+    margin-left: 2%;
+    width: 80%;
+}
+.project-title{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.project-read{
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+}
+
+/* About me */
+
+.fragment{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.frag-title{
+    text-align: center;
+    text-decoration: underline;
+}
+.frag-text{
+    border-left: 1px solid grey;
+    padding-left: 1%;
+}
+.fragment .frag-list-main{
+    margin-bottom: 1%;
+    list-style: square;
+}
+.fragment .frag-list-submain{
+    list-style: disc;
 }
