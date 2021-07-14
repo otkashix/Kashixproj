@@ -4,17 +4,21 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Iván Delgado">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Front End, Back end, Web Development, Fullstack, Kashix, Kashix., Iván, Iván Delgado, Portfolio">
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Kashix's Project</title>
     </head>
     <body>
         
         <nav>
+            <img src="images/folder.png" alt="A blue folder icon" id="nav-icon">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="aboutme.html">About me</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#aboutme">About me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#social">Social</a></li>
             </ul>
         </nav>
 
@@ -24,45 +28,170 @@
                 <h1 id="intro-title">Welcome to my web page!</h1>
                 <p id="intro-text">Here, you will be able to see who I am and what I'm working on</p>
             </div>
-
+    
             <br>
 
-            <div id="content">
+            <div id="projects">
 
-                <div class="contents-left">
+                <div class="content">
 
-                    <div class="content-text-left">
-                        <h2 class="content-text-left-title"><a href="projects.html">Projects</a></h2>
-                        <p class="content-text-left-info">You will be able to see all the projects I'm currently working on. Also, some good projects I've worked on.</p>
+                    <div class="category">
+                        <h1 class="category-title">Projects</h1>
                     </div>
-                    <img class="content-text-left-img" src="images/project_placeholder.jpg" alt="Picture of a cute kitty">
-                    
-                </div>
+
+                    <div class="project">
     
-                <div class="contents-right">
+                        <img src="images/halfmoon.webp" alt="Project's picture">
+                        <div class="project-info">
+                            <h1 class="project-title">HalfMoon - Discord Bot</h1>
+                            <p class="project-description">A Discord bot built in Javascript, NodeJS, using DiscordJS library. Using MySQL as the database, a custom dashboard made in H3H3. Oriented to server administration.</p>
+                            <a class="project-read">More information</a>
+                        </div>
     
-                    <div class="content-text-right">
-                        <h2 class="content-text-right-title"><a href="aboutme.html">About me</a></h2>
-                        <p class="content-text-right-info">Do you want to know more about me? Do you want to follow all the progress of development about my projects? This is the right place!</p>
                     </div>
-                    <img class="content-text-right-img" src="images/aboutme_placeholder.jpg" alt="Picture of a cute kitty">
-                    
-                </div>
     
+                    <div class="project">
     
-                <div class="contents-left">
+                        <img src="images/kashixproj.png" alt="Project's picture">
+                        <div class="project-info">
+                            <h1 class="project-title">Kashix's Project - Portfolio Web Page</h1>
+                            <p class="project-description">This is the main page of the author. The web itself works as a portfolio, to show anyone all the information related to author and his projects. Also, it can be used as a way of contact.</p>
+                            <a class="project-read">More information</a>
+                        </div>
     
-                    <div class="content-text-left">
-                        <h2 class="content-text-title"><a href="contact.html">Contact</a></h2>
-                        <p class="content-text-info">If you are interested in any aspect of my work, feel free to stay in touch with me!</p>
                     </div>
-                    <img class="content-text-left-img" src="images/contact_placeholder.jpg" alt="Picture of a cute kitty">
-                    
+    
+                    <div class="project">
+    
+                        <img src="images/typingweb.png" alt="Project's picture">
+                        <div class="project-info">
+                            <h1 class="project-title">Typing web - Web page</h1>
+                            <p class="project-description">A typing race web application, to see how fast can you type on your keyboard. It's very basic, everything made on front-end languages and frameworks: HTML5, CSS3, Javascript, JQuery and JSON.</p>
+                            <a class="project-read">More information</a>
+                        </div>
+    
+                    </div>
+    
                 </div>
 
             </div>
 
+            <div id="aboutme">
+
+                <div class="content">
+
+                    <div class="category">
+                        <h1 class="category-title">About me</h1>
+                    </div>
+
+                    <div class="fragment">
+    
+                        <h1 class="frag-title">Introduction</h1>
+                        <p class="frag-text">Greetings, reader. My name is Iván Delgado Terroso, also known as Kashix on the Internet. I'm a young man studying Web Applications Development. From a child, I'm in love with the technology, mostly computers. When I was a young, I started learning the basic of the web development: HTML and CSS; I've been in touch with other languages though, as Visual Basic, Java and C#. Now, aiming to be a very professional web developer, aiming to work on a very great job.</p>
+    
+                    </div>
+    
+                    <div class="fragment">
+    
+                        <h1 class="frag-title">Studies</h1>
+                        <p class="frag-text">These are all my studies:</p>
+                        <ul class="frag-list-main">
+                            <li>High School</li>
+                                <ul class="frag-list-submain">
+                                    <li>Microsoft Offimatic</li>
+                                    <li>A bit of Visual Basic</li>
+                                    <li>A bit of Java</li>
+                                    <li>Spanish</li>
+                                    <li>English</li>
+                                </ul>
+                            <li>Half of Web Application Development high grade, where I learnt:</li>
+                                <ul class="frag-list-submain">
+                                    <li>MySQL</li>
+                                    <li>HTML and CSS</li>
+                                    <li>Windows configuration</li>
+                                    <li>Linux enviroment</li>
+                                </ul>
+                            <li>Course of Web application development</li>
+                                <ul class="frag-list-submain">
+                                    <li>HTML and CSS (and Bootstrap)</li>
+                                    <li>Javascript (and JQuery)</li>
+                                    <li>PHP</li>
+                                    <li>MySQL</li>
+                                    <li>Web design</li>
+                                    <li>XAMP</li>
+                                </ul>
+                        </ul>
+    
+                        <p class="frag-text">Self got knowledge:</p>
+                        <ul class="frag-list-main">
+                            <li>HTML, CSS, Javascript</li>
+                            <li>JSON</li>
+                            <li>MongoDB</li>
+                            <li>NodeJS</li>
+                            <li>Windows Enviroment</li>
+                            <li>Linux enviroment</li>
+                        </ul>
+    
+                    </div>
+    
+                </div>
+
+            </div>
+
+            <div id="contact">
+
+                <div class="category">
+                    <h1 class="category-title">Contact</h1>
+                    <p class="category-text">Fill the form below to contact me!</p>
+                </div>
+        
+                <div id="form">
+                    <form action="#" id="contact">
+                        <div id="form-data">
+                            <label>Name <span class="form-obligatory">*</span></label>
+                            <br>
+                            <input type="text" name="name" id="name" placeholder="John Smith">
+                            <br>
+                            <label>Email <span class="form-obligatory">*</span></label>
+                            <br>
+                            <input type="email" name="email" id="email" placeholder="johnsmith@gmail.com">
+                            <br>
+                        </div>
+                        <div id="form-message">
+                            <label>Message <span class="form-obligatory">*</span></label>
+                            <br>
+                            <textarea name="message" id="message" cols="60" rows="10" placeholder="I'd like to contact you"></textarea>
+                        </div>
+                        <br>
+                        <div id="form-button">
+                            <input type="submit" name="button" id="button" value="Send">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div id="social">
+
+                <div class="category">
+                    <h1 class="category-title">Social</h1>
+                </div>
+
+                <ul id="main-side-social">
+                    <li class="side-list"><a href="index.html"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a></li>
+                    <li class="side-list"><a href="projects.html"><i class="fa fa-gitlab" aria-hidden="true"></i>GitLab</a></li>
+                    <li class="side-list"><a href="projects.html"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a></li>
+                    <li class="side-list"><a href="projects.html"><i class="fa fa-tasks" aria-hidden="true"></i>NPM</a></li>             
+                </ul>
+
+            </div>
+            
+
         </div>
+
+        <footer>
+            Kashix's Project &copy;, 2021 - By Iván Delgado
+        </footer>
 
     </body>
 </html>
