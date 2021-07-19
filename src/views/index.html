@@ -144,50 +144,7 @@
                             <li>Euskera (Vasque)</li>
                         </ul>
 
-                    </div>                    
-    
-                    <!--<div class="fragment">
-    
-                        <h1 class="frag-title">Studies</h1>
-                        <p class="frag-text">These are all my studies:</p>
-                        <ul class="frag-list-main">
-                            <li>High School</li>
-                                <ul class="frag-list-submain">
-                                    <li>Microsoft Offimatic</li>
-                                    <li>A bit of Visual Basic</li>
-                                    <li>A bit of Java</li>
-                                    <li>Spanish</li>
-                                    <li>English</li>
-                                </ul>
-                            <li>Half of Web Application Development high grade, where I learnt:</li>
-                                <ul class="frag-list-submain">
-                                    <li>MySQL</li>
-                                    <li>HTML and CSS</li>
-                                    <li>Windows configuration</li>
-                                    <li>Linux enviroment</li>
-                                </ul>
-                            <li>Course of Web application development</li>
-                                <ul class="frag-list-submain">
-                                    <li>HTML and CSS (and Bootstrap)</li>
-                                    <li>Javascript (and JQuery)</li>
-                                    <li>PHP</li>
-                                    <li>MySQL</li>
-                                    <li>Web design</li>
-                                    <li>XAMP</li>
-                                </ul>
-                        </ul>
-    
-                        <p class="frag-text">Self got knowledge:</p>
-                        <ul class="frag-list-main">
-                            <li>HTML, CSS, Javascript</li>
-                            <li>JSON</li>
-                            <li>MongoDB</li>
-                            <li>NodeJS</li>
-                            <li>Windows Enviroment</li>
-                            <li>Linux enviroment</li>
-                        </ul>
-    
-                    </div>-->
+                    </div>
     
                 </div>
 
@@ -201,7 +158,7 @@
                 </div>
         
                 <div id="form">
-                    <form action="#" id="contact">
+                    <form id="contact" action="form.php">
                         <div id="form-data">
                             <label>Name <span class="form-obligatory">*</span></label>
                             <br>
@@ -233,20 +190,38 @@
                 </div>
 
                 <ul id="main-side-social">
-                    <li class="side-list"><a href="index.html"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a></li>
-                    <li class="side-list"><a href="projects.html"><i class="fa fa-gitlab" aria-hidden="true"></i>GitLab</a></li>
-                    <li class="side-list"><a href="projects.html"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a></li>
-                    <li class="side-list"><a href="projects.html"><i class="fa fa-tasks" aria-hidden="true"></i>NPM</a></li>             
+                    <li class="side-list"><a href="https://github.com/otkashix" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>GitHub</a></li>
+                    <li class="side-list"><a href="https://gitlab.com/kashix" target="_blank"><i class="fa fa-gitlab" aria-hidden="true"></i>GitLab</a></li>
+                    <li class="side-list"><a href="https://www.linkedin.com/in/iv%C3%A1n-delgado-terroso-438b58217/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a></li>
+                    <li class="side-list"><a href="https://www.npmjs.com/~kashix" target="_blank"><i class="fa fa-tasks" aria-hidden="true"></i>NPM</a></li>             
                 </ul>
 
             </div>
             
+            <footer>
+                Kashix's Project &copy;, 2021 - By Iván Delgado
+            </footer>
 
         </div>
 
-        <footer>
-            Kashix's Project &copy;, 2021 - By Iván Delgado
-        </footer>
+        <div id="cookie-alert">
 
+            <div id="cookie-text">
+                <p>🍘 This web uses cookies and other tracking technologies to improve your browsing experience on the website. <a href="https://ec.europa.eu/info/cookies_en#whatarecookies" id="cookie-ref">Know more here</a>.</p>
+            </div>
+            
+            <div id="cookie-button">
+                <button id="cookie-button" onclick="hideCookie()">I accept</button>
+            </div>
+            
+        </div>
+
+
+        <script>
+            function hideCookie(){
+                document.getElementById('cookie-alert').style.visibility = "hidden";
+            }
+        </script>
+        
     </body>
 </html>
